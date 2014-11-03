@@ -5,7 +5,7 @@ var req = require('request');
 var fs = require('fs');
 
 // data from https://data.sfgov.org/Public-Safety/SFPD-Incidents-Previous-Three-Months/tmnf-yvry
-var numbRes = 40;
+var numbRes = 8;
 
 var url = 'http://data.sfgov.org/resource/gxxq-x39z.json?$limit='+ numbRes;
 
@@ -17,7 +17,7 @@ var datRe = req(url,function(err,res,body){
   //console.log(process.getgid());
 
 //  console.log(body);
-getSome(body);
+  body = getSome(body);
 
   return body;
 })
@@ -43,7 +43,11 @@ function getSome (dat){
 
 console.log( makegeojson(dat));
 
+  var geojson = makegeojson(dat);
 
+  fs.writeFileSync('sfcrime.geojson', geojson);
+
+  return geojson;
 
 
 }
