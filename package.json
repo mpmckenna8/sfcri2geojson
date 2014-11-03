@@ -1,0 +1,30 @@
+{
+  "name": "sfcri2geojson",
+  "version": "1.0.0",
+  "description": "To change json from socrata api to geojson.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "request": "^2.47.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpmckenna8/sfcri2geojson.git"
+  },
+  "keywords": [
+    "geojson",
+    "json"
+  ],
+  "author": "mpmckenna8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpmckenna8/sfcri2geojson/issues"
+  },
+  "homepage": "https://github.com/mpmckenna8/sfcri2geojson"
+}
