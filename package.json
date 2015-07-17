@@ -1,6 +1,6 @@
 {
   "name": "sfcri2geojson",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "To change json from socrata api to geojson.",
   "main": "index.js",
   "directories": {
