@@ -44,9 +44,8 @@ function gejson(dat){
   }
 
 
-
 //geoson = geoson.toString()
-var blabber = JSON.stringify(geoson)
+  var blabber = JSON.stringify(geoson)
 
 
    return blabber

@@ -1,153 +1,153 @@
 [ {
-  "time" : "13:00",
-  "category" : "NON-CRIMINAL",
-  "pddistrict" : "SOUTHERN",
-  "location" : {
-    "needs_recoding" : false,
-    "longitude" : "-122.403876552366",
-    "latitude" : "37.7775833632336",
-    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
-  },
-  "address" : "900.0 Block of HARRISON ST",
-  "descript" : "LOST PROPERTY",
-  "dayofweek" : "Thursday",
-  "resolution" : "NONE",
-  "date" : 1412208000,
-  "y" : "37.7775833632336",
-  "x" : "-122.403876552366",
-  "incidntnum" : "146205499"
-}
-, {
-  "time" : "20:00",
-  "category" : "VEHICLE THEFT",
-  "pddistrict" : "BAYVIEW",
-  "location" : {
-    "needs_recoding" : false,
-    "longitude" : "-122.406306152069",
-    "latitude" : "37.7335714048034",
-    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
-  },
-  "address" : "2300.0 Block of SAN BRUNO AV",
-  "descript" : "STOLEN TRUCK",
-  "dayofweek" : "Thursday",
-  "resolution" : "NONE",
-  "date" : 1414022400,
-  "y" : "37.7335714048034",
-  "x" : "-122.406306152069",
-  "incidntnum" : "140900108"
-}
-, {
-  "time" : "00:30",
-  "category" : "VANDALISM",
-  "pddistrict" : "BAYVIEW",
-  "location" : {
-    "needs_recoding" : false,
-    "longitude" : "-122.396482054254",
-    "latitude" : "37.710995308161",
-    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
-  },
-  "address" : "BLANKEN AV / GILLETTE AV",
-  "descript" : "MALICIOUS MISCHIEF, VANDALISM",
-  "dayofweek" : "Thursday",
-  "resolution" : "NONE",
-  "date" : 1409184000,
-  "y" : "37.710995308161",
-  "x" : "-122.396482054254",
-  "incidntnum" : "146197799"
-}
-, {
-  "time" : "11:24",
-  "category" : "BURGLARY",
-  "pddistrict" : "SOUTHERN",
-  "location" : {
-    "needs_recoding" : false,
-    "longitude" : "-122.407036790381",
-    "latitude" : "37.7847532835996",
-    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
-  },
-  "address" : "800.0 Block of MARKET ST",
-  "descript" : "BURGLARY, UNLAWFUL ENTRY",
-  "dayofweek" : "Saturday",
-  "resolution" : "ARREST, BOOKED",
-  "date" : 1412985600,
-  "y" : "37.7847532835996",
-  "x" : "-122.407036790381",
-  "incidntnum" : "140859561"
-}
-, {
-  "time" : "15:40",
+  "time" : "04:00",
   "category" : "ASSAULT",
-  "pddistrict" : "CENTRAL",
-  "location" : {
-    "needs_recoding" : false,
-    "longitude" : "-122.397613296977",
-    "latitude" : "37.7935081014216",
-    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
-  },
-  "address" : "CALIFORNIA ST / DAVIS ST",
-  "descript" : "AGGRAVATED ASSAULT WITH BODILY FORCE",
-  "dayofweek" : "Friday",
-  "resolution" : "NONE",
-  "date" : 1413504000,
-  "y" : "37.7935081014216",
-  "x" : "-122.397613296977",
-  "incidntnum" : "140879462"
-}
-, {
-  "time" : "17:10",
-  "category" : "SUSPICIOUS OCC",
   "pddistrict" : "MISSION",
   "location" : {
     "needs_recoding" : false,
-    "longitude" : "-122.406656623063",
-    "latitude" : "37.7568256145719",
+    "longitude" : "-122.435002864271",
+    "latitude" : "37.7608878061245",
     "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
   },
-  "address" : "1000.0 Block of POTRERO AV",
-  "descript" : "SUSPICIOUS OCCURRENCE",
-  "dayofweek" : "Monday",
-  "resolution" : "NONE",
-  "date" : 1410134400,
-  "y" : "37.7568256145719",
-  "x" : "-122.406656623063",
-  "incidntnum" : "140757802"
-}
-, {
-  "time" : "00:24",
-  "category" : "ASSAULT",
-  "pddistrict" : "SOUTHERN",
-  "location" : {
-    "needs_recoding" : false,
-    "longitude" : "-122.408626028337",
-    "latitude" : "37.7808558853331",
-    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
-  },
-  "address" : "100.0 Block of 6TH ST",
+  "address" : "18TH ST / CASTRO ST",
   "descript" : "BATTERY",
-  "dayofweek" : "Saturday",
-  "resolution" : "COMPLAINANT REFUSES TO PROSECUTE",
-  "date" : 1407542400,
-  "y" : "37.7808558853331",
-  "x" : "-122.408626028337",
-  "incidntnum" : "140662405"
+  "dayofweek" : "Wednesday",
+  "resolution" : "NONE",
+  "date" : "2005-04-20T00:00:00",
+  "y" : "37.7608878061245",
+  "x" : "-122.435002864271",
+  "incidntnum" : "050436712"
 }
 , {
-  "time" : "21:15",
-  "category" : "OTHER OFFENSES",
-  "pddistrict" : "MISSION",
+  "time" : "18:00",
+  "category" : "LARCENY/THEFT",
+  "pddistrict" : "PARK",
   "location" : {
     "needs_recoding" : false,
-    "longitude" : "-122.419519291984",
-    "latitude" : "37.7639057653745",
+    "longitude" : "-122.446837820235",
+    "latitude" : "37.7622550270122",
     "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
   },
-  "address" : "2000.0 Block of MISSION ST",
-  "descript" : "POSSESSION OF BURGLARY TOOLS",
-  "dayofweek" : "Saturday",
+  "address" : "1100 Block of CLAYTON ST",
+  "descript" : "GRAND THEFT FROM A BUILDING",
+  "dayofweek" : "Sunday",
+  "resolution" : "NONE",
+  "date" : "2008-01-13T00:00:00",
+  "y" : "37.7622550270122",
+  "x" : "-122.446837820235",
+  "incidntnum" : "080049078"
+}
+, {
+  "time" : "04:10",
+  "category" : "ASSAULT",
+  "pddistrict" : "INGLESIDE",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-122.444707063455",
+    "latitude" : "37.7249307267936",
+    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "address" : "0 Block of SGTJOHNVYOUNG LN",
+  "descript" : "AGGRAVATED ASSAULT WITH A KNIFE",
+  "dayofweek" : "Sunday",
   "resolution" : "ARREST, BOOKED",
-  "date" : 1411776000,
-  "y" : "37.7639057653745",
-  "x" : "-122.419519291984",
-  "incidntnum" : "140817036"
+  "date" : "2013-05-05T00:00:00",
+  "y" : "37.7249307267936",
+  "x" : "-122.444707063455",
+  "incidntnum" : "130366639"
+}
+, {
+  "time" : "01:00",
+  "category" : "DRIVING UNDER THE INFLUENCE",
+  "pddistrict" : "SOUTHERN",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-122.408953598286",
+    "latitude" : "37.7832878735491",
+    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "address" : "MASON ST / TURK ST",
+  "descript" : "DRIVING WHILE UNDER THE INFLUENCE OF ALCOHOL",
+  "dayofweek" : "Tuesday",
+  "resolution" : "ARREST, BOOKED",
+  "date" : "2003-07-08T00:00:00",
+  "y" : "37.7832878735491",
+  "x" : "-122.408953598286",
+  "incidntnum" : "030810835"
+}
+, {
+  "time" : "20:53",
+  "category" : "OTHER OFFENSES",
+  "pddistrict" : "TENDERLOIN",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-122.414056291891",
+    "latitude" : "37.7827931071006",
+    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "address" : "TURK ST / LEAVENWORTH ST",
+  "descript" : "TRAFFIC VIOLATION ARREST",
+  "dayofweek" : "Friday",
+  "resolution" : "ARREST, BOOKED",
+  "date" : "2013-10-04T00:00:00",
+  "y" : "37.7827931071006",
+  "x" : "-122.414056291891",
+  "incidntnum" : "130839567"
+}
+, {
+  "time" : "07:00",
+  "category" : "BURGLARY",
+  "pddistrict" : "NORTHERN",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-122.426730544229",
+    "latitude" : "37.8034674969672",
+    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "address" : "3100 Block of FRANKLIN ST",
+  "descript" : "BURGLARY OF APARTMENT HOUSE, UNLAWFUL ENTRY",
+  "dayofweek" : "Tuesday",
+  "resolution" : "NONE",
+  "date" : "2007-08-14T00:00:00",
+  "y" : "37.8034674969672",
+  "x" : "-122.426730544229",
+  "incidntnum" : "070838580"
+}
+, {
+  "time" : "14:23",
+  "category" : "DRUG/NARCOTIC",
+  "pddistrict" : "INGLESIDE",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-122.43597721703",
+    "latitude" : "37.7231288306727",
+    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "address" : "MISSION ST / PERSIA AV",
+  "descript" : "POSSESSION OF MARIJUANA",
+  "dayofweek" : "Tuesday",
+  "resolution" : "ARREST, CITED",
+  "date" : "2008-03-04T00:00:00",
+  "y" : "37.7231288306727",
+  "x" : "-122.43597721703",
+  "incidntnum" : "080233102"
+}
+, {
+  "time" : "15:50",
+  "category" : "OTHER OFFENSES",
+  "pddistrict" : "INGLESIDE",
+  "location" : {
+    "needs_recoding" : false,
+    "longitude" : "-122.447241159611",
+    "latitude" : "37.7201577971255",
+    "human_address" : "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}"
+  },
+  "address" : "2300 Block of SAN JOSE AV",
+  "descript" : "DRIVERS LICENSE, SUSPENDED OR REVOKED",
+  "dayofweek" : "Wednesday",
+  "resolution" : "ARREST, CITED",
+  "date" : "2006-07-05T00:00:00",
+  "y" : "37.7201577971255",
+  "x" : "-122.447241159611",
+  "incidntnum" : "060711805"
 }
  ]

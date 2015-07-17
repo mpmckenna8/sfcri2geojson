@@ -32,9 +32,6 @@ var datRe = req(url,function(err,res,body){
 
 
 
-//console.log(datRe)
-// process.stdout
-
 //console.log(datRe);
 function getSome (dat){
   //on('data')
