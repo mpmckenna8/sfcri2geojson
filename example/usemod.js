@@ -14,7 +14,6 @@ var datRe = req(url,function(err,res,body){
     throw err;
   }
   //console.log(res);
-  //console.log(process.getgid());
 
 //  console.log(body);
   body = getSome(body);
@@ -23,12 +22,17 @@ var datRe = req(url,function(err,res,body){
 })
 //.pipe(process.stdout)
 .on('data', function(buff){
-  console.log(buff.toString());
+//  console.log('now buffer to stringing', buff.toString());
 //  var pri = JSON.parse(buff);
+  // I can do stuff with a buffer of the data here if I so choose.
+
 
 })
-.pipe(fs.createWriteStream('./crime.json'))
-//.pipe(process.stdout)
+//.pipe(getSome)
+.on('error', function(err){
+  console.log('something wrong with the rewquest', err)
+})
+// I should try and pipe into a stream transform so that this jam can handle bigger amounts of data in case SF's data portal actually gets useful with their api.
 
 
 
@@ -38,7 +42,7 @@ function getSome (dat){
 //  fs.createWriteStream('./blah.json');
 
 
-console.log( makegeojson(dat));
+//  console.log( makegeojson(dat));
 
   var geojson = makegeojson(dat);
 

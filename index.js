@@ -21,7 +21,7 @@ function gejson(dat){
   dat = JSON.parse(dat);
 
   var tots = dat.length;
-  console.log(tots)
+  //console.log(tots)
   for(i in dat){
     var obj = dat[i];
   //  console.log(dat[i])
@@ -32,14 +32,12 @@ function gejson(dat){
   var geom = makeGeom(obj);
   blah.geometry.coordinates.push(Number(geom[0]),Number(geom[1]))
   //console.log(feats)
-  //console.log(blah)
   var whoee = {}
   whoee[i] = (blah);
 //  console.log(blah)
   geoson.features.push(blah);
 
 
-//console.log(geoson);
 
   }
 
