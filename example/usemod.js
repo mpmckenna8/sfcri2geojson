@@ -5,7 +5,7 @@ var req = require('request');
 var fs = require('fs');
 
 // data from https://data.sfgov.org/Public-Safety/SFPD-Incidents-Previous-Three-Months/tmnf-yvry
-var numbRes = 8;
+var numbRes = 100;
 
 var url = 'https://data.sfgov.org/resource/wg3w-h783.json?$limit=' + numbRes + '&$order=incident_datetime DESC';
 //'http://data.sfgov.org/resource/gxxq-x39z.json?$limit='+ numbRes;
