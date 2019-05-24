@@ -1,4 +1,4 @@
-var makegeojson = require('../index.js');
+var sfcri2geojson = require('../index.js');
 
 
 var req = require('request');
@@ -7,7 +7,8 @@ var fs = require('fs');
 // data from https://data.sfgov.org/Public-Safety/SFPD-Incidents-Previous-Three-Months/tmnf-yvry
 var numbRes = 8;
 
-var url = 'http://data.sfgov.org/resource/gxxq-x39z.json?$limit='+ numbRes;
+var url = 'https://data.sfgov.org/resource/wg3w-h783.json?$limit=' + numbRes + '&$order=incident_datetime DESC';
+//'http://data.sfgov.org/resource/gxxq-x39z.json?$limit='+ numbRes;
 
 var datRe = req(url,function(err,res,body){
   if(err){
@@ -15,7 +16,7 @@ var datRe = req(url,function(err,res,body){
   }
   //console.log(res);
 
-//  console.log(body);
+  console.log('body from req,', body);
   body = getSome(body);
 
   return body;
@@ -23,9 +24,9 @@ var datRe = req(url,function(err,res,body){
 //.pipe(process.stdout)
 .on('data', function(buff){
 //  console.log('now buffer to stringing', buff.toString());
-//  var pri = JSON.parse(buff);
+  //var pri = JSON.parse(buff);
   // I can do stuff with a buffer of the data here if I so choose.
-
+//  console.log(pri)
 
 })
 //.pipe(getSome)
@@ -44,9 +45,11 @@ function getSome (dat){
 
 //  console.log( makegeojson(dat));
 
-  var geojson = makegeojson(dat);
+  var geojson = sfcri2geojson(dat);
 
-  fs.writeFileSync('sfcrime.geojson', geojson);
+  console.log('parsed thing, ', geojson)
+
+  fs.writeFileSync('sfcrime.geojson', JSON.stringify(geojson.geojson) );
 
   return geojson;
 
