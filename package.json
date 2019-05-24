@@ -7,9 +7,10 @@
     "example": "example"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "request": "^2.47.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
