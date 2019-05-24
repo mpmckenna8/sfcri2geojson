@@ -3,20 +3,24 @@ var geoson = {
   "features":[
 
   ]
-
 }
 
-
-function feature(){
-  this.type = "Feature";
-  //  this.index = i;
-  this.properties = {};
-  this.geometry = {"type": "Point",
-                    "coordinates":[]};
+let final_object = {
+geojson: geoson,
+nongeo: [ ]
 }
 
+/* The exported function
+Takes the data returned from the request for SF crime data and parses it into an object with a geojon object and an array of things with no coordinates
 
-function gejson(dat){
+{
+geojson: {
+geo object here
+}
+nongeo: [ array of other things.]
+}
+*/
+function gejsonify(dat){
 //  console.log('type of dat ' +typeof(dat))
   dat = JSON.parse(dat);
 
@@ -25,28 +29,30 @@ function gejson(dat){
   for(i in dat){
     var obj = dat[i];
   //  console.log(dat[i])
-  var feats = pushfeatparts(dat[i])
-  var blah = new feature();
-  blah.properties= (feats);
-
-  var geom = makeGeom(obj);
-  blah.geometry.coordinates.push(Number(geom[0]),Number(geom[1]))
-  //console.log(feats)
-  var whoee = {}
-  whoee[i] = (blah);
-//  console.log(blah)
-  geoson.features.push(blah);
+    var feats = pushfeatparts(dat[i])
+    var blah = new feature();
+    blah.properties= (feats);
 
 
+    if(obj.latitude) {
+    var geom = makeGeom(obj);
+    blah.geometry.coordinates = geom
+    //console.log(blah)
+    geoson.features.push(blah);
+
+    }
+    else {
+
+      console.log('this has no lat, ', obj)
+      final_object.nongeo.push(obj)
+    }
 
   }
 
 
-//geoson = geoson.toString()
-  var blabber = JSON.stringify(geoson)
+  final_object.geojson = geoson;
 
-
-   return blabber
+  return final_object
 
 
 }
@@ -58,21 +64,33 @@ function pushfeatparts(d){
 //  console.log(d.date)
 
   return {
-    "time": d.time,
-    "date": new Date(d.date*1000),
-    "category": d.category,
-    "pddistrict": d.pddistrict,
+    "datetime": d.incident_datetime,
+    //"date": new Date(d.date*1000),
+    report_type_description: d.report_type_description,
+    "category": d.incident_category,
+    incident_subcategory: d.incident_subcategory,
+    "pddistrict": d.police_district,
     "dayofweek": d.dayofweek,
     "resolution": d.resolution,
-    "incidntnum": d.incidntnum,
-    "desc":d.descript
+    "incident_number": d.incident_number,
+    "desc":d.incident_description
   }
 }
 
 function makeGeom (d){
 
-  return [d.x, d.y]
+  return [d.latitude, d.longitude]
 
 }
 
-module.exports = gejson
+function feature(){
+  this.type = "Feature";
+  //  this.index = i;
+  this.properties = {};
+  this.geometry = {"type": "Point",
+                    "coordinates":[]};
+}
+
+
+
+module.exports = gejsonify
