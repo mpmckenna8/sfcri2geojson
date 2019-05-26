@@ -1,8 +1,6 @@
 var geoson = {
   "type": "FeatureCollection",
-  "features":[
-
-  ]
+  "features":[]
 }
 
 let final_object = {
@@ -79,7 +77,7 @@ function pushfeatparts(d){
 
 function makeGeom (d){
 
-  return [d.latitude, d.longitude]
+  return [parseFloat(d.latitude), parseFloat(d.longitude)]
 
 }
 
