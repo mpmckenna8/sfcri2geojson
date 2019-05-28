@@ -41,7 +41,7 @@ function gejsonify(dat){
     }
     else {
 
-      console.log('this has no lat, ', obj)
+    //  console.log('this has no lat, ', obj)
       final_object.nongeo.push(obj)
     }
 

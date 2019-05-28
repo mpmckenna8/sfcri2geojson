@@ -36,8 +36,6 @@ var datRe = req(url,function(err,res,body){
 // I should try and pipe into a stream transform so that this jam can handle bigger amounts of data in case SF's data portal actually gets useful with their api.
 
 
-
-//console.log(datRe);
 function getSome (dat){
   //on('data')
 //  fs.createWriteStream('./blah.json');
